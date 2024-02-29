@@ -17,12 +17,7 @@ body {
     padding: 30px;
     position: fixed;
 }
-@media (max-width: 1900px) {
-    .sidebox {
-        left: auto: /*restore to default*/
-        right: -24%; /*push it to the right more*/
-    }
-}
+
 .left {
     width: 50%;
     display: flex;
@@ -80,4 +75,29 @@ body {
 .name {
     display: flex;
     gap: 40px;
+}
+
+@media (max-width: 900px) { 
+    * {
+        text-align: center  ;
+    }
+    #timer {
+        width: 100%;
+    }
+    .container {
+        align-items: center;
+        width: 100%;
+        flex-direction: column;
+    }
+    .sidebox {
+        left: auto; /*restore to default*/
+        right: -24%; /*push it to the right more*/
+    }
+    .box {
+        margin: 0;
+    }
+    .counter {
+        gap: 5%;
+        justify-content: center;
+    }
 }
